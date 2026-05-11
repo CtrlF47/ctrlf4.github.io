@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Máquina do Tempo — Terceirão 2025 🍄</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="ribbon">
+  🍄 TERCEIRÃO 2025 &nbsp;·&nbsp; SMURFS 💙 &nbsp;·&nbsp; MÁQUINA DO TEMPO &nbsp;·&nbsp; 🍄
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+
+  <div class="stars">
+    <div class="star" style="width:20px;height:20px;top:15%;left:30%;animation-delay:0s;"></div>
+    <div class="star" style="width:14px;height:14px;top:25%;left:60%;animation-delay:0.8s;"></div>
+    <div class="star" style="width:18px;height:18px;top:40%;left:85%;animation-delay:1.5s;"></div>
+    <div class="star" style="width:12px;height:12px;top:60%;left:10%;animation-delay:2s;"></div>
+    <div class="star" style="width:16px;height:16px;top:70%;left:45%;animation-delay:0.3s;"></div>
+  </div>
+
+  <span class="smurf-float" style="top:20%;left:5%;animation-delay:0s;">🟦</span>
+  <span class="smurf-float" style="top:30%;right:6%;animation-delay:2s;font-size:2rem;">🍄</span>
+  <span class="smurf-float" style="top:65%;right:14%;animation-delay:1s;">💙</span>
+  <span class="smurf-float" style="top:75%;left:25%;animation-delay:3s;font-size:2.2rem;">🟦</span>
+
+  <div class="badge-year">✨ Turma de 2025 ✨</div>
+
+  <h1 class="hero-title">Máquina<br>do Tempo</h1>
+  <p class="hero-subtitle">🍄 Terceirão dos Smurfs 💙 Aldeia 2025 🍄</p>
+
+  <div class="quote-box">
+    <p class="quote-text">
+      "Na nossa aldeia ninguém anda sozinho —<br>somos pequenos, azuis e inseparáveis."
+    </p>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Role para reviver</span>
+    <span class="arrow">↓</span>
+  </div>
+
+  <div class="mushroom-deco left">
+    <div class="mush mush-sm"><div class="mush-cap"></div><div class="mush-stem"></div></div>
+    <div class="mush mush-lg"><div class="mush-cap"></div><div class="mush-stem"></div></div>
+    <div class="mush mush-md mush-blue"><div class="mush-cap"></div><div class="mush-stem"></div></div>
+  </div>
+  <div class="mushroom-deco right">
+    <div class="mush mush-md mush-blue"><div class="mush-cap"></div><div class="mush-stem"></div></div>
+    <div class="mush mush-lg"><div class="mush-cap"></div><div class="mush-stem"></div></div>
+    <div class="mush mush-sm"><div class="mush-cap"></div><div class="mush-stem"></div></div>
+  </div>
+</section>
+
+<div class="wave bg-white">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,70 1080,-10 1440,30 L1440,60 L0,60 Z" fill="#FAFFF9"/>
+  </svg>
+</div>
+
+<!-- MURAL GERAL -->
+<section class="section bg-white">
+  <span class="smurf-deco" style="top:40px;left:20px;">🟦</span>
+  <span class="smurf-deco" style="top:80px;right:30px;">🍄</span>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📸 Mural da Aldeia</div>
+      <h2 class="section-title">Nossa Turma 💙</h2>
+      <p class="section-desc">Os momentos azuis que a gente nunca esquece — clique nas fotos para adicionar suas memórias smurfantásticas!</p>
+    </div>
+    <div class="photo-grid photo-grid-3">
+      <div class="photo-slot" onclick="triggerUpload('foto-geral-1')">
+        <div class="photo-frame" id="frame-foto-geral-1"><img id="img-foto-geral-1" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">📷</div><div class="placeholder-text">A aldeia inteira</div><button class="upload-btn">Adicionar foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda smurf..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('foto-geral-2')">
+        <div class="photo-frame" id="frame-foto-geral-2"><img id="img-foto-geral-2" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🎒</div><div class="placeholder-text">Um dia smurftástico</div><button class="upload-btn">Adicionar foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda smurf..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('foto-geral-3')">
+        <div class="photo-frame" id="frame-foto-geral-3"><img id="img-foto-geral-3" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🌟</div><div class="placeholder-text">Momento Papai Smurf</div><button class="upload-btn">Adicionar foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda smurf..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('foto-geral-4')">
+        <div class="photo-frame" id="frame-foto-geral-4"><img id="img-foto-geral-4" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🎉</div><div class="placeholder-text">Festa na aldeia</div><button class="upload-btn">Adicionar foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda smurf..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('foto-geral-5')">
+        <div class="photo-frame" id="frame-foto-geral-5"><img id="img-foto-geral-5" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🍄</div><div class="placeholder-text">Cogumelo casa</div><button class="upload-btn">Adicionar foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda smurf..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('foto-geral-6')">
+        <div class="photo-frame" id="frame-foto-geral-6"><img id="img-foto-geral-6" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">💙</div><div class="placeholder-text">Smurfamizade eterna</div><button class="upload-btn">Adicionar foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda smurf..."></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,0 C480,60 960,0 1440,40 L1440,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ════════ INTERCLASSE - TEMA ONÇA PINTADA P&B ════════ -->
+<section class="section bg-jaguar">
+  <div class="jaguar-spots"></div>
+  <span class="jaguar-claws left">🐾</span>
+  <span class="jaguar-claws">🐾</span>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">🐆 Interclasse 2025</div>
+      <h2 class="section-title">Arena da Onça 🐾</h2>
+      <p class="section-desc">Smurfs com garra de onça pintada — preto, branco e atitude. Cada disputa, um rugido!</p>
+    </div>
+
+    <div class="score-board" style="margin-bottom: 40px;">
+      <h3>🏆 PLACAR DA SELVA 🐾</h3>
+      <div class="teams-grid">
+        <div class="team-card">
+          <div class="team-emoji">🐾</div>
+          <div class="team-name" contenteditable="true" data-placeholder="Turma A">Turma A</div>
+          <input class="score-input" type="number" placeholder="0" min="0">
+        </div>
+        <div class="team-card">
+          <div class="team-emoji">🐆</div>
+          <div class="team-name" contenteditable="true" data-placeholder="Turma B">Turma B</div>
+          <input class="score-input" type="number" placeholder="0" min="0">
+        </div>
+        <div class="team-card">
+          <div class="team-emoji">⚪</div>
+          <div class="team-name" contenteditable="true" data-placeholder="Turma C">Turma C</div>
+          <input class="score-input" type="number" placeholder="0" min="0">
+        </div>
+        <div class="team-card winner">
+          <div class="team-emoji">🏆</div>
+          <div class="team-name" contenteditable="true" data-placeholder="Campeão">Campeão!</div>
+          <input class="score-input" type="number" placeholder="0" min="0">
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-tag">📸 No Calor da Caça</div>
+    </div>
+    <div class="photo-grid photo-grid-4">
+      <div class="photo-slot" onclick="triggerUpload('inter-1')">
+        <div class="photo-frame" id="frame-inter-1"><img id="img-inter-1" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">⚽</div><div class="placeholder-text">Futebol</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('inter-2')">
+        <div class="photo-frame" id="frame-inter-2"><img id="img-inter-2" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🏀</div><div class="placeholder-text">Basquete</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('inter-3')">
+        <div class="photo-frame" id="frame-inter-3"><img id="img-inter-3" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🏐</div><div class="placeholder-text">Vôlei</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot" onclick="triggerUpload('inter-4')">
+        <div class="photo-frame" id="frame-inter-4"><img id="img-inter-4" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🥳</div><div class="placeholder-text">Torcida feroz</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <div class="section-header">
+        <div class="section-tag">📅 Como foi a caçada</div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" contenteditable="true">Data · Esporte</div>
+            <div class="timeline-title" contenteditable="true">1ª Fase — Mostrando as garras</div>
+            <div class="timeline-text" contenteditable="true">Clique aqui para escrever como foi esse momento do interclasse...</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" contenteditable="true">Data · Esporte</div>
+            <div class="timeline-title" contenteditable="true">Semifinal — Bote da onça</div>
+            <div class="timeline-text" contenteditable="true">Clique aqui para escrever como foi esse momento do interclasse...</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" contenteditable="true">Data · Grande Final</div>
+            <div class="timeline-title" contenteditable="true">🏆 Final — Rugido de campeão!</div>
+            <div class="timeline-text" contenteditable="true">Clique aqui para escrever como foi a grande final e a comemoração!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C480,0 960,60 1440,20 L1440,0 Z" fill="#FFE0B2"/>
+  </svg>
+</div>
+
+<!-- ════════ SÃO JOÃO ════════ -->
+<section class="section bg-saojoao" style="padding-top: 110px; padding-bottom: 110px;">
+  <div class="bunting"></div>
+  <div class="bunting bottom"></div>
+  <span class="smurf-deco" style="top:80px;left:40px;font-size:3rem;">🟦</span>
+  <span class="smurf-deco" style="top:120px;right:50px;">💙</span>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">🔥 São João Smurfeiro</div>
+      <h2 class="section-title">Arraiá da Aldeia 🌽</h2>
+      <p class="section-desc">Os smurfs trocaram o gorrinho branco pelo chapéu de palha — bora dançar quadrilha?</p>
+    </div>
+
+    <div class="sj-grid">
+      <div class="bonfire-card">
+        <h3>🌽 A Festa</h3>
+        <p contenteditable="true" data-placeholder="Conte como foi...">Quadrilha, comidas típicas e muito forró embaixo das bandeirinhas. A aldeia inteira virou um arraiá!</p>
+      </div>
+      <div class="bonfire-card">
+        <h3>💃 A Quadrilha</h3>
+        <p contenteditable="true" data-placeholder="Conte como foi...">Anarriê! O Smurf Vaidoso virou noivo e o Smurf Ranzinza... bem, fugiu da dança. Foi histórico!</p>
+      </div>
+      <div class="bonfire-card">
+        <h3>🥘 A Comilança</h3>
+        <p contenteditable="true" data-placeholder="Conte o cardápio...">Pamonha, canjica, milho, quentão, pé de moleque — comida de smurf glutão até não poder mais!</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 50px;">
+      <div class="section-tag">📸 Memórias do Arraiá</div>
+    </div>
+    <div class="photo-grid photo-grid-4">
+      <div class="photo-slot polaroid" onclick="triggerUpload('sj-1')">
+        <div class="photo-frame" id="frame-sj-1"><img id="img-sj-1" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🔥</div><div class="placeholder-text">Fogueira</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('sj-2')">
+        <div class="photo-frame" id="frame-sj-2"><img id="img-sj-2" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">💃</div><div class="placeholder-text">Quadrilha</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('sj-3')">
+        <div class="photo-frame" id="frame-sj-3"><img id="img-sj-3" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🌽</div><div class="placeholder-text">Comidas</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('sj-4')">
+        <div class="photo-frame" id="frame-sj-4"><img id="img-sj-4" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🎆</div><div class="placeholder-text">A festa toda</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,70 1080,-10 1440,30 L1440,60 L0,60 Z" fill="#F3E5F5"/>
+  </svg>
+</div>
+
+<!-- ════════ TROTES ════════ -->
+<section class="section bg-trotes">
+  <span class="smurf-deco" style="top:40px;right:60px;">🟦</span>
+  <span class="smurf-deco" style="bottom:40px;left:60px;">🍄</span>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">🎭 Trotes da Turma</div>
+      <h2 class="section-title">Hora da Zoeira 🤡</h2>
+      <p class="section-desc">Quando os smurfs viram Smurf Brincalhão — os trotes mais lendários do terceirão!</p>
+    </div>
+
+    <div class="trote-grid">
+      <div class="trote-card">
+        <span class="trote-emoji">😂</span>
+        <h3 contenteditable="true">Trote da Pegadinha</h3>
+        <p contenteditable="true" data-placeholder="Conte o trote...">Conte aquele trote inesquecível que rolou na turma — quem caiu, quem riu, quem armou.</p>
+      </div>
+      <div class="trote-card">
+        <span class="trote-emoji">🎨</span>
+        <h3 contenteditable="true">Trote do Uniforme</h3>
+        <p contenteditable="true" data-placeholder="Conte o trote...">O dia em que a turma inteira veio fantasiada. Smurfs azuis pelos corredores!</p>
+      </div>
+      <div class="trote-card">
+        <span class="trote-emoji">🎵</span>
+        <h3 contenteditable="true">Trote Musical</h3>
+        <p contenteditable="true" data-placeholder="Conte o trote...">A música que invadiu a escola e ninguém esquece. La la la la-la-la 🎶</p>
+      </div>
+      <div class="trote-card">
+        <span class="trote-emoji">🤣</span>
+        <h3 contenteditable="true">O Trote Lendário</h3>
+        <p contenteditable="true" data-placeholder="Conte o trote...">Aquele que entrou pra história. Quando o Smurf Gênio combinou tudo nos mínimos detalhes.</p>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-tag">📸 Flagrantes dos Trotes</div>
+    </div>
+    <div class="photo-grid photo-grid-3">
+      <div class="photo-slot polaroid" onclick="triggerUpload('trote-1')">
+        <div class="photo-frame" id="frame-trote-1"><img id="img-trote-1" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">📸</div><div class="placeholder-text">Flagra do trote</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('trote-2')">
+        <div class="photo-frame" id="frame-trote-2"><img id="img-trote-2" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🤡</div><div class="placeholder-text">Caraduras</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('trote-3')">
+        <div class="photo-frame" id="frame-trote-3"><img id="img-trote-3" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">😆</div><div class="placeholder-text">Quem caiu</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C480,0 960,60 1440,20 L1440,0 Z" fill="#2D0612"/>
+  </svg>
+</div>
+
+<!-- ════════ PADRINHOS - VERMELHO AMOR + SMURF ════════ -->
+<section class="section bg-padrinhos">
+  <div id="hearts-container" style="position:absolute;inset:0;pointer-events:none;overflow:hidden;"></div>
+  <span class="smurf-deco" style="top:50px;left:30px;color:#FFCDD2;">🟦</span>
+  <span class="smurf-deco" style="top:80px;right:40px;">💙</span>
+  <span class="smurf-deco" style="bottom:60px;left:50px;">❤️</span>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">💌 Pedido de Padrinhos</div>
+      <h2 class="section-title">Nossos Padrinhos ❤️</h2>
+      <p class="section-desc">Com todo o amor da aldeia azul — as pessoas que disseram "sim" e entraram pra sempre na nossa história smurf.</p>
+    </div>
+
+    <div class="padrinho-grid">
+      <div class="padrinho-card">
+        <div class="padrinho-avatar" id="avatar-pad-1" onclick="triggerAvatarUpload('pad-1')">
+          <img id="img-pad-1" alt=""><div class="avatar-placeholder">🎓</div>
+        </div>
+        <div class="padrinho-name" contenteditable="true" data-placeholder="Nome do Padrinho">Nome do Padrinho</div>
+        <div class="padrinho-role" contenteditable="true" data-placeholder="Professor · Ex-aluno">Professor · Ex-aluno</div>
+        <div class="padrinho-msg" contenteditable="true" data-placeholder="Mensagem com amor...">"Escreva aqui uma mensagem carinhosa do padrinho para a turma..."</div>
+      </div>
+      <div class="padrinho-card">
+        <div class="padrinho-avatar" id="avatar-pad-2" onclick="triggerAvatarUpload('pad-2')">
+          <img id="img-pad-2" alt=""><div class="avatar-placeholder">🌟</div>
+        </div>
+        <div class="padrinho-name" contenteditable="true">Nome do Padrinho</div>
+        <div class="padrinho-role" contenteditable="true">Professor · Ex-aluno</div>
+        <div class="padrinho-msg" contenteditable="true" data-placeholder="Mensagem com amor...">"Escreva aqui uma mensagem carinhosa do padrinho para a turma..."</div>
+      </div>
+      <div class="padrinho-card">
+        <div class="padrinho-avatar" id="avatar-pad-3" onclick="triggerAvatarUpload('pad-3')">
+          <img id="img-pad-3" alt=""><div class="avatar-placeholder">💙</div>
+        </div>
+        <div class="padrinho-name" contenteditable="true">Nome do Padrinho</div>
+        <div class="padrinho-role" contenteditable="true">Professor · Ex-aluno</div>
+        <div class="padrinho-msg" contenteditable="true" data-placeholder="Mensagem com amor...">"Escreva aqui uma mensagem carinhosa do padrinho para a turma..."</div>
+      </div>
+      <div class="padrinho-card">
+        <div class="padrinho-avatar" id="avatar-pad-4" onclick="triggerAvatarUpload('pad-4')">
+          <img id="img-pad-4" alt=""><div class="avatar-placeholder">🍄</div>
+        </div>
+        <div class="padrinho-name" contenteditable="true">Nome do Padrinho</div>
+        <div class="padrinho-role" contenteditable="true">Professor · Ex-aluno</div>
+        <div class="padrinho-msg" contenteditable="true" data-placeholder="Mensagem com amor...">"Escreva aqui uma mensagem carinhosa do padrinho para a turma..."</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <div class="section-header">
+        <div class="section-tag">📸 O Momento do Pedido</div>
+        <h2 class="section-title" style="font-size: 1.8rem;">A surpresa que ninguém esquece ❤️</h2>
+      </div>
+      <div class="photo-grid photo-grid-3">
+        <div class="photo-slot polaroid" onclick="triggerUpload('pedido-1')">
+          <div class="photo-frame" id="frame-pedido-1"><img id="img-pedido-1" alt="">
+            <div class="placeholder-content"><div class="placeholder-icon">💌</div><div class="placeholder-text">Hora do pedido!</div><button class="upload-btn">Foto</button></div>
+          </div>
+          <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+        </div>
+        <div class="photo-slot polaroid" onclick="triggerUpload('pedido-2')">
+          <div class="photo-frame" id="frame-pedido-2"><img id="img-pedido-2" alt="">
+            <div class="placeholder-content"><div class="placeholder-icon">🎁</div><div class="placeholder-text">A reação!</div><button class="upload-btn">Foto</button></div>
+          </div>
+          <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+        </div>
+        <div class="photo-slot polaroid" onclick="triggerUpload('pedido-3')">
+          <div class="photo-frame" id="frame-pedido-3"><img id="img-pedido-3" alt="">
+            <div class="placeholder-content"><div class="placeholder-icon">🥂</div><div class="placeholder-text">Comemorando junto!</div><button class="upload-btn">Foto</button></div>
+          </div>
+          <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave bg-white">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,20 C360,60 1080,-10 1440,30 L1440,0 Z" fill="#FAFFF9"/>
+  </svg>
+</div>
+
+<!-- MEMÓRIAS -->
+<section class="section bg-white">
+  <span class="smurf-deco" style="top:30px;left:30px;">💙</span>
+  <span class="smurf-deco" style="top:60px;right:30px;">🟦</span>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">💬 Memórias da Aldeia</div>
+      <h2 class="section-title">Nossos Melhores Momentos 🍄</h2>
+      <p class="section-desc">Um cantinho azul pra guardar os registros mais smurftásticos do ano.</p>
+    </div>
+
+    <div class="memories-wall">
+      <div class="photo-slot polaroid" onclick="triggerUpload('mem-1')">
+        <div class="photo-frame" style="aspect-ratio:3/4;" id="frame-mem-1"><img id="img-mem-1" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🌸</div><div class="placeholder-text">Foto vertical</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('mem-2')">
+        <div class="photo-frame" id="frame-mem-2"><img id="img-mem-2" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🎶</div><div class="placeholder-text">Aquele rolê</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('mem-3')">
+        <div class="photo-frame" style="aspect-ratio:3/4;" id="frame-mem-3"><img id="img-mem-3" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🌈</div><div class="placeholder-text">Momento único</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('mem-4')">
+        <div class="photo-frame" id="frame-mem-4"><img id="img-mem-4" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🤝</div><div class="placeholder-text">Smurfamizade</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('mem-5')">
+        <div class="photo-frame" id="frame-mem-5"><img id="img-mem-5" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">✨</div><div class="placeholder-text">Noite especial</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+      <div class="photo-slot polaroid" onclick="triggerUpload('mem-6')">
+        <div class="photo-frame" style="aspect-ratio:3/4;" id="frame-mem-6"><img id="img-mem-6" alt="">
+          <div class="placeholder-content"><div class="placeholder-icon">🏫</div><div class="placeholder-text">Na escola</div><button class="upload-btn">Foto</button></div>
+        </div>
+        <div class="photo-caption"><div class="photo-caption-text" contenteditable="true" data-placeholder="Legenda..."></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C720,0 1080,60 1440,10 L1440,0 Z" fill="#0D47A1"/>
+  </svg>
+</div>
+
+<footer>
+  <div class="footer-title">Terceirão 2025 🍄💙</div>
+  <p>Smurfs para sempre — unidos pela mesma aldeia 🟦</p>
+  <p style="margin-top: 16px; color: rgba(255,255,255,0.45); font-size: 0.8rem; font-style: italic;">
+    "Na aldeia azul, ninguém solta a mão de ninguém — somos pequenos, mas somos lenda."
+  </p>
+  <div class="footer-hearts">💙 🍄 🟦 🍄 💙</div>
+</footer>
+
+<input type="file" id="file-input-photo" accept="image/*">
+<input type="file" id="file-input-avatar" accept="image/*">
+
+<script src="script.js"></script>
+</body>
+</html>
